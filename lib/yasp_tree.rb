@@ -1,14 +1,19 @@
 class YaspTree
-	
-	attr_accessor :tree
 
-	def initialize
-		@tree = []
+	def initialize 
+		@head = Union.new
+		puts @head
 	end
 
 	def add(obj)
-		@tree << obj
+		@head << obj
 	end
+
+	def walk
+		@head.s
+	end
+
+	#objecty things
 
 	def cube(x,opt={})
 		add(Cube.new(x,opt))
@@ -35,13 +40,23 @@ class YaspTree
 	def union(*args)
 	end
 
-	def minkowski(*args)
+	def minkowski(&block)
+		process_block_command(Minkowski.new,&block)
 	end
 
 	def translate(x,y,z, &block)
-		add(TranslateIn.new([x,y,z]))
-	  block.call
-	  add(TranslateOut.new)
+		process_block_command(Translate.new([x,y,z]),&block)
+	end
+
+	def process_block_command(element,&block)
+		add(element)
+		
+		oldhead = @head
+		@head = element
+
+		self.instance_eval(&block)
+
+		@head = oldhead
 	end
 
 	def rotate(x,y,z,&block)

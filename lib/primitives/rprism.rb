@@ -1,4 +1,4 @@
-class RPrism < Shape
+class RPrism < Command
 
 	def initialize(x,y,z,options={})
 		super(options)

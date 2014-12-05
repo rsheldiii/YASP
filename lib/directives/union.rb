@@ -1,0 +1,2 @@
+class Union < Command
+end

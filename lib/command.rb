@@ -1,18 +1,20 @@
 class Command
 
-	def initialize
+	def initialize(options={})
+		@children = []
+		@opts = options
+	end
+
+	def <<(child)#TODO deferral mixin
+		@children << child
 	end
 
 	def opts
-		raise NotImplementedError
+		@opts
 	end
 
 	def label
-		raise NotImplementedError
-	end
-
-	def has_block?
-		raise NotImplementedError
+		self.class.to_s.downcase
 	end
 
 	def s
@@ -20,14 +22,12 @@ class Command
 		string += "("
 		string += opts.map { |key, value| "#{key} = #{value}"}.join(", ").chomp(", ")
 		string +=	")"
-		if has_block?
+		if !@children.empty?
 			string += "{\n"
+			string += @children.map(&:s).join
+			string += "}\n"
 		else
 			string += ";\n"
 		end
-	end
-
-	def close_block
-		"};\n"
 	end
 end

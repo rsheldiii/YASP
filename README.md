@@ -6,8 +6,11 @@ YASP is a OpenSCAD DSL in Ruby. I have one main goal: complete coverage, and I a
 
 This is a mess because it's 2 in the morning on a wednesday, but it makes primitives inside a DSL block and that's better than any other DSL I've made.
 
-#TODO:
-* tree structure instead of array structure for yasp_tree
+#TODO (not in order):
+* support hash for function calls. I could do both somehow, I know it
 * gem
-* translate
-* literally everything else
+* test?
+* fix empty yasp tree creating syntax error
+* register all functions
+* create new primitives like maybe implicitcad's height function primitives
+* rotate prism primitive

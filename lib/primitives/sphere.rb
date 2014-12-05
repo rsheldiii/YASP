@@ -1,4 +1,4 @@
-class Sphere < Shape
+class Sphere < Command
 	def initialize(r,options={})
 		super(options)
 		@r = r
@@ -6,12 +6,8 @@ class Sphere < Shape
 
 	def opts
 		super.merge({
-			"radius" => @r,
+			"r" => @r,
 			"$fn" => 24
 		})
-	end
-
-	def label
-		"sphere"
 	end
 end

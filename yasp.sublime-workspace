@@ -1,0 +1,530 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"s"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"in",
+				"instance_eval"
+			],
+			[
+				"Yasp",
+				"YaspTree"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"map",
+				"map	map { |e| .. }"
+			],
+			[
+				"opt",
+				"opt	option(..)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "yasp.rb",
+			"settings":
+			{
+				"buffer_size": 510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/yasp_tree.rb",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/directives/translate.rb",
+			"settings":
+			{
+				"buffer_size": 176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "requires.rb",
+			"settings":
+			{
+				"buffer_size": 321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/directives/base_directive.rb",
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Unix",
+				"name": "primitive.rb"
+			}
+		},
+		{
+			"file": "lib/primitives/base_primitive.rb",
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/symbol.rb",
+			"settings":
+			{
+				"buffer_size": 552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scad.scad",
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dday/Code/yasp/yasp",
+		"/home/dday/Code/yasp/yasp/lib",
+		"/home/dday/Code/yasp/yasp/lib/directives",
+		"/home/dday/Code/yasp/yasp/lib/primitives"
+	],
+	"file_history":
+	[
+		"/home/dday/Code/yasp/yasp/scad.scad",
+		"/home/dday/Code/yasp/yasp/requires.rb",
+		"/home/dday/Code/yasp/yasp/lib/primitives/shape.rb~",
+		"/home/dday/Code/yasp/yasp/README.md",
+		"/home/dday/Code/yasp/yasp/lib/shapes/cylinder.rb",
+		"/home/dday/Code/yasp/yasp/lib/primitives/cylinder.rb",
+		"/home/dday/Code/yasp/yasp/lib/primitives/cylinder.rb~",
+		"/home/dday/Code/yasp/yasp/lib/primitives/rprism.rb",
+		"/home/dday/Code/yasp/yasp/lib/primitives/rprism.rb~",
+		"/home/dday/Code/yasp/yasp/lib/primitives/sphere.rb",
+		"/home/dday/Code/yasp/yasp/lib/primitives/sphere.rb~",
+		"/home/dday/Code/yasp/regular_prism.rb",
+		"/home/dday/Code/yasp/cylinder.rb",
+		"/home/dday/Code/yasp/cube.rb",
+		"/home/dday/Code/yasp/shape.rb",
+		"/home/dday/Code/yasp/shapes_files.rb",
+		"/home/dday/Code/yasp/command.rb",
+		"/home/dday/Code/yasp/yasp/.gitignore",
+		"/home/dday/Code/yasp/rprism.rb",
+		"/home/dday/Code/yasp/README.md",
+		"/home/dday/Code/yasp/translate.rb",
+		"/home/dday/Code/yasp/yasp_tree.rb",
+		"/home/dday/Code/yasp/main.rb",
+		"/home/dday/Code/yasp/sphere.rb",
+		"/home/dday/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/dday/Code/yasp/shapes.rb",
+		"/home/dday/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/dday/Code/git/tmk_keyboard/keyboard/ergodox/Makefile.lufa",
+		"/home/dday/Code/git/tmk_keyboard/keyboard/ergodox/Makefile.pjrc"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"has_block",
+			"class",
+			"Shape",
+			"shapes",
+			"a",
+			"compile",
+			"parse",
+			"self.",
+			"opts",
+			"default_opts",
+			"to_s",
+			"default_params",
+			"end"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"has_children",
+			"BasePrimitive"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "yasp.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/yasp_tree.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/directives/translate.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "requires.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/directives/base_directive.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28,
+								28
+							]
+						],
+						"settings":
+						{
+							"auto_name": "primitive.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/primitives/base_primitive.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/symbol.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scad.scad",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "yasp.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

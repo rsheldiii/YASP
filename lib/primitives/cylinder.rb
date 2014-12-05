@@ -1,4 +1,4 @@
-class Cylinder < Shape
+class Cylinder < Command
 	def initialize(r,h,options={})#TODO the rest of the variables
 		super(options)
 		@r = r
@@ -13,7 +13,4 @@ class Cylinder < Shape
 		})
 	end
 
-	def label
-		"cylinder"
-	end
 end

@@ -1,10 +1,15 @@
 require './lib/command'
-require './lib/shapes/shape'
-require './lib/shapes/rprism'
-require './lib/shapes/cube'
-require './lib/shapes/cylinder'
-require './lib/shapes/regular_prism'
-require './lib/shapes/sphere'
+
+require './lib/primitives/rprism'
+require './lib/primitives/cube'
+require './lib/primitives/cylinder'
+require './lib/primitives/regular_prism'
+require './lib/primitives/sphere'
+
+require './lib/directives/translate'
+require './lib/directives/union'
+require './lib/directives/minkowski'
+
 require './lib/yasp_tree'
 require './lib/directives/translate'
 #require './polygon'

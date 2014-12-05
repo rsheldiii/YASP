@@ -1,10 +1,14 @@
-class TranslateIn
-	def initialize(position)
+class Translate < Command
+
+	def initialize(position,opts={})
+		super(opts)
 		@position=position
 	end
 
-	def s
-		
+	def opts
+		super.merge({
+			"v" => @position
+			})
 	end
 	
-	end
+end
