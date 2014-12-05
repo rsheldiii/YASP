@@ -1,6 +1,5 @@
 #YASP, Yet Another SCAD Program
 
-All I wanna do is use variables in my SCAD man.
 
 YASP is a OpenSCAD DSL in Ruby. 
 
@@ -14,9 +13,13 @@ Keep It Simple
 
 ##Why
 
-All the other DSL's I've seen have eventually crapped out or been abandoned by their creator before they are feature complete; I think a pragmatic approach with a conservative goal will be a lot easier to handle. I think SCAD's primitives and approach is fine, so you won't see many crazy features, at least not for a while. My biggest gripe is that the language, rather than the approach, and tieing it all to an IDE, sucks.
+All I wanna do is use variables in my SCAD man.
 
-I mean, I'm not really adding anything new here, but it is pretty cool what you can do:
+SCAD is not a programming language, and that bothers me. Variables, for one thing, would be an extreme help in reducing
+code complexity for my 3d objeccts, as well as proper looping mechanisms and possibly functions as arguments.
+
+The aim of this DSL is to provide a dead simple Ruby interface to SCAD programming that fits into a regular work flow
+with any editor, and that's about it. the brevity of the code speaks for itself:
 
 ```
 Yasp.file("./scad.scad") do
