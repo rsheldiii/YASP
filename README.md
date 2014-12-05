@@ -2,9 +2,38 @@
 
 All I wanna do is use variables in my SCAD man.
 
-YASP is a OpenSCAD DSL in Ruby. I have one main goal: complete coverage, and I aim to complete this goal through one design methodology: Keep It Simple. All the other DSL's I've seen have eventually crapped out or been abandoned by their creator before they are feature complete. I want to at least implement all functions before I crap out. I think a pragmatic approach with a conservative goal will be a lot easier to handle than trying to repackage the wheel with a million other bits and baubles. 
+YASP is a OpenSCAD DSL in Ruby. 
 
-This is a mess because it's 2 in the morning on a wednesday, but it makes primitives inside a DSL block and that's better than any other DSL I've made.
+The goal: complete coverage
+
+The design methodology: Keep It Simple.
+
+All the other DSL's I've seen have eventually crapped out or been abandoned by their creator before they are feature complete; I think a pragmatic approach with a conservative goal will be a lot easier to handle than trying to repackage the wheel with a million other bits and baubles. I'm not even going to release until this thing is feature complete, just to save someone else from the disappointment of walking into another half finished project
+
+I mean, I'm not really adding anything new here, but it is pretty cool what you can do:
+
+```
+Yasp.file("./scad.scad") do
+	#the power of YASP
+	9.times do |x|
+		7.times do |y|
+			translate(x*3,y*4,0) do
+				sphere(1)
+			end
+		end
+	end
+
+	#the power of GREYSKULL
+	translate(3,4,5) do
+		minkowski() do
+			cube(4)
+			sphere(3)
+		end
+	end
+end
+```
+
+![](http://i.imgur.com/kPxZ6GJ.png)
 
 #TODO (not in order):
 * support hash for function calls. I could do both somehow, I know it
