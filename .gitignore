@@ -1,1 +1,10 @@
 *~
+*.gem
+.bundle
+pkg/*
+tmp/
+log/
+.rvmrc
+.ruby-gemset
+.ruby-version
+.yardoc
