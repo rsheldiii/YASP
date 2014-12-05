@@ -8,3 +8,5 @@ log/
 .ruby-gemset
 .ruby-version
 .yardoc
+*.sublime-project
+*.sublime-workspace
