@@ -35,6 +35,10 @@ end
 
 ![](http://i.imgur.com/kPxZ6GJ.png)
 
+go ahead and look at the source in scad.scad, it's not pretty. Can you do it shorter than that? of course you can, I don't care about shortness in my scad code, even my translates have brackets.
+
+You can't do it shorter in SCAD than you can in YASP though
+
 #TODO (not in order):
 * support hash for function calls. I could do both somehow, I know it
 * gem
