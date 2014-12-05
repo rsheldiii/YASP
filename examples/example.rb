@@ -1,7 +1,7 @@
 #example
-require_relative 'lib/yasp'
+require_relative '../lib/yasp'
 
-Yasp.file("./scad.scad") do
+Yasp.file("scad.scad") do
   #the power of YASP
   9.times do |x|
     7.times do |y|
