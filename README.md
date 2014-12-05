@@ -4,11 +4,17 @@ All I wanna do is use variables in my SCAD man.
 
 YASP is a OpenSCAD DSL in Ruby. 
 
-The goal: complete coverage
+##The goal
 
-The design methodology: Keep It Simple.
+complete coverage
 
-All the other DSL's I've seen have eventually crapped out or been abandoned by their creator before they are feature complete; I think a pragmatic approach with a conservative goal will be a lot easier to handle than trying to repackage the wheel with a million other bits and baubles. I'm not even going to release until this thing is feature complete, just to save someone else from the disappointment of walking into another half finished project
+##The design methodology
+
+Keep It Simple
+
+##Why
+
+All the other DSL's I've seen have eventually crapped out or been abandoned by their creator before they are feature complete; I think a pragmatic approach with a conservative goal will be a lot easier to handle. I think SCAD's primitives and approach is fine, so you won't see many crazy features, at least not for a while. My biggest gripe is that the language, rather than the approach, and tieing it all to an IDE, sucks.
 
 I mean, I'm not really adding anything new here, but it is pretty cool what you can do:
 
