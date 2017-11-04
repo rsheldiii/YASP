@@ -1,17 +1,17 @@
-#YASP, Yet Another SCAD Program
+# YASP, Yet Another SCAD Program
 
 
 YASP is a OpenSCAD DSL in Ruby. 
 
-##The goal
+## The goal
 
 complete coverage
 
-##The design methodology
+## The design methodology
 
 Keep It Simple
 
-##Why
+## Why
 
 All I wanna do is use variables in my SCAD man.
 
@@ -48,7 +48,7 @@ go ahead and look at the source in scad.scad, it's not pretty. Can you do it sho
 
 You can't do it shorter in SCAD than you can in YASP though
 
-#TODO (not in order):
+# TODO (not in order):
 * support hash for function calls. I could do both somehow, I know it
 * gem
 * test?
