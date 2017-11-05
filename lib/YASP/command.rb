@@ -40,10 +40,12 @@ class Command
 	end
 
 	def parse_arguments
-		unless @opts.empty?
-			"#{argstring}, #{optstring}"
-		else
+		if @opts.empty?
 			argstring
+		elsif @args.empty?
+			optstring
+		else
+			"#{argstring}, #{optstring}"
 		end
 	end
 
