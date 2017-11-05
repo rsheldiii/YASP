@@ -1,2 +1,0 @@
-class Minkowski < Command
-end

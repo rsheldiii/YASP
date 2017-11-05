@@ -1,64 +1,41 @@
 class YaspTree
 
-	def initialize 
-		@head = Union.new
-		puts @head
+	def initialize(block)
+		@head = Command.new(nil, [])
+		process(block)
+	end
+
+	def tree
+		@head
 	end
 
 	def add(obj)
 		@head << obj
 	end
 
-	def walk
-		@head.s
+	def to_scad
+		@head.to_scad(0);
 	end
 
-	#objecty things
-
-	def cube(x,opt={})
-		add(Cube.new(x,opt))
+	def process(block)
+		instance_eval(&block)
 	end
 
-	def rprism(x,y,z,opt={})
-		add(RPrism.new(x,y,x,opt))
+	def assign(&block)
+		YaspTree.new(block).tree
 	end
 
-	def sphere(r,opt={})
-		add(Sphere.new(r,opt))
-	end
-
-	def regular_prism(chord,height,sides,opt={})
-		add(RegularPrism.new(chord,height,sides,opt))
-	end
-
-	def cylinder(r,h,opt={})
-		add(Cylinder.new(r,h,opt))
-	end
-
-	#methody things
-
-	def union(*args)
-	end
-
-	def minkowski(&block)
-		process_block_command(Minkowski.new,&block)
-	end
-
-	def translate(x,y,z, &block)
-		process_block_command(Translate.new([x,y,z]),&block)
-	end
-
-	def process_block_command(element,&block)
+	def method_missing(m, *args, &block)
+		element = Command.new(m, args)
 		add(element)
-		
-		oldhead = @head
-		@head = element
 
-		self.instance_eval(&block)
+		if block_given?
+			previous_head = @head
+			@head = element
 
-		@head = oldhead
-	end
+			self.instance_eval(&block)
 
-	def rotate(x,y,z,&block)
+			@head = previous_head
+		end
 	end
 end

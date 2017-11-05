@@ -1,30 +1,28 @@
-require_relative 'requires'
+require_relative 'YASP/command'
+require_relative 'YASP/yasp_tree'
 
 class Yasp
 
-	#putses
-	def self.puts(&block)
-		puts compile(parse(&block))
+	def self.yell(&block)
+		puts stringify(&block)
 	end
 
 	#outputs to file
-	def self.file(filename,&block)
+	def self.file(filename, &block)
 		file = File.open(filename,"w+")
-		file.write(compile(parse(&block)))
+		file.write(stringify(&block))
 		file.close
+	end
+
+	#compiles all symbols into their text representation in the correct order
+	def self.stringify(&block)
+		parse(block).to_scad
 	end
 
 	private
 
 	#interprets the code into symbols -- commands, because Symbol is already a class
-	def self.parse(&block)
-		yasperator = YaspTree.new
-		yasperator.instance_eval(&block)
-		yasperator
-	end
-
-	#compiles all symbols into their text representation in the correct order
-	def self.compile(yasperator)
-		yasperator.walk
+	def self.parse(block)
+		YaspTree.new(block)
 	end
 end
