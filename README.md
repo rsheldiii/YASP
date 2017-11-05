@@ -2,6 +2,10 @@
 
 YASP is a dead simple OpenSCAD DSL in Ruby
 
+## install
+
+`gem install yasp`
+
 ## Why
 
 There are other DSLs, but they try to do too much, and their code is kind of confusing. Those aren't the greatest justifications for making a new one (hence the name) but YASP focuses on being as simple, predictable, and explicit as possible. In addition, YASP has the ability to save partial trees to variables, if that's your kind of thing.
