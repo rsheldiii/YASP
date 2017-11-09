@@ -1,7 +1,7 @@
 #example
 require_relative '../lib/yasp'
 
-class RoundedCube < YaspDirective
+class RoundedCube < YaspClass
 
   MINKOWSKI_RADIUS = 2
 
@@ -14,16 +14,6 @@ class RoundedCube < YaspDirective
   end
 end
 
-class Funkytown < YaspDirective
-  # and functions!
-  def initialize(position)
-    super()
-    translate(position) do
-      cube([6,4,5], center: true)
-    end
-  end
-end
-
 Yasp.file('scad.scad') do
 
   # you can load Commands into variables!
@@ -31,7 +21,12 @@ Yasp.file('scad.scad') do
     sphere(3)
   end
 
-
+  # and functions!
+  def square_at(position)
+    translate(position) do
+      cube(6, center = true)
+    end
+  end
 
   # and use them wherever you'd like!
   5.times do |y|
@@ -41,8 +36,8 @@ Yasp.file('scad.scad') do
         # anything that returns Commands must directly use the
         # add() function, since method_missing can't catch them.
         add(sphere);
-        add(Funkytown.new([0,0,y]))
-        translate([0,0,10]).add(RoundedCube.new(5))
+        square_at([0,0,y])
+        translate([0,0,10]) { add(RoundedCube.new(5)) }
       end
     end
   end

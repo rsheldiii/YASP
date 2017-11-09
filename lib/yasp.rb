@@ -1,4 +1,5 @@
-require_relative 'YASP/yasp_directive'
+require_relative 'YASP/command'
+require_relative 'YASP/yasp_block'
 
 class Yasp
 
@@ -21,9 +22,9 @@ class Yasp
 	#interprets a block into a tree of Commands, which can be walked to create openSCAD code
 	def self.parse(block = nil, &given_block)
 		if block_given?
-			YaspDirective.new(&given_block)
+			YaspBlock.new(given_block)
 		elsif block
-			YaspDirective.new(&block)
+			YaspBlock.new(block)
 		end
 	end
 end
