@@ -14,8 +14,8 @@ There are other DSLs, but they try to do too much, and their code is kind of con
 
 YASP has four classes:
 * Yasp, in charge of the various output methods (string, stdout, file)
-* YaspClass, the core of yasp, is an AST builder and evaluator that can be extended
-* YaspBlock, a YaspClass that processes a block
+* YaspDirective, the core of yasp, is an AST builder and evaluator that can be extended
+* YaspBlock, a YaspDirective that processes a block
 * Command, a class that represents an SCAD directive (primitive or operation) and its variables and children
 
 OpenSCAD abstracts very cleanly into a tree of Commands, so almost everything in YASP boils down to that.
@@ -32,7 +32,7 @@ OpenSCAD abstracts very cleanly into a tree of Commands, so almost everything in
 ```
 require 'yasp'
 
-class RoundedCube < YaspClass
+class RoundedCube < YaspDirective
 
   MINKOWSKI_RADIUS = 2
 
