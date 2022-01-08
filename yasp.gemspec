@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.summary     = "Yet Another SCAD Program/YASP Ain't an SCAD Program"
   spec.description = "a small, no-nonsense DSL for SCAD in Ruby"
   spec.homepage    = "https://github.com/rsheldiii/YASP"
-  spec.license     = "MIT"
+  spec.license     = "GPL-2.0"
 
   spec.required_ruby_version = ">= 2.6.0"
 
