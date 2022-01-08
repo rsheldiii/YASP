@@ -1,16 +1,37 @@
+# frozen_string_literal: true
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-Gem::Specification.new do |s|
-  s.name          = 'yasp'
-  s.version       = '3.0.0'
-  s.date          = '2014-12-04'
-  s.summary       = "Yet Another SCAD Program/YASP Ain't an SCAD Program"
-  s.description   = "a small, no-nonsense DSL for SCAD in Ruby"
-  s.authors       = ["Robert Sheldon"]
-  s.email         = 'rsheldiii@gmail.com'
-  s.files         = `git ls-files`.split($/)
-  s.require_paths = ["lib"]
-  s.homepage      = 'https://github.com/rsheldiii/YASP'
-  s.license       = 'MIT'
+require_relative "lib/YASP/version"
+
+Gem::Specification.new do |spec|
+  spec.name    = "yasp"
+  spec.version = Yasp::VERSION
+  spec.authors = ["Robert Sheldon"]
+  spec.email   = ["rsheldiii@gmail.com"]
+
+  spec.summary     = "Yet Another SCAD Program/YASP Ain't an SCAD Program"
+  spec.description = "a small, no-nonsense DSL for SCAD in Ruby"
+  spec.homepage    = "https://github.com/rsheldiii/YASP"
+  spec.license     = "MIT"
+
+  spec.required_ruby_version = ">= 2.6.0"
+
+  spec.metadata["homepage_uri"]    = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+  #spec.metadata["changelog_uri"]   = "https://github.com/rhseldiii/YASP/CHANGELOG.md"
+
+  # Specify which files should be added to the gem when it is released.
+  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
+    `git ls-files -z`.split("\x0").reject do |f|
+      (f == __FILE__) || f.match(%r{\A(?:(?:test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
+    end
+  end
+
+  spec.bindir = "bin"
+  spec.executables = ["console", "setup"]
+  spec.require_paths = ["lib"]
+
 end
