@@ -10,3 +10,4 @@ log/
 .yardoc
 *.sublime-project
 *.sublime-workspace
+*.lock
